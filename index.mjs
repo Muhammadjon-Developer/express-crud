@@ -1,5 +1,5 @@
 import express from 'express';
-import bodyParser from 'body-parser';
+import bodyParser from 'body-parser'
 const app = express();
 import userRoutes from './components/users.mjs'
 
@@ -10,7 +10,6 @@ app.use(bodyParser.json());
 app.use('/users', userRoutes);
 
 app.get('/', (req, res) => res.send('HELLO FROM HOMEPAGE'))
-
-// app.get('/', (req, res));
+app.get('/', (req, res) => res.send('HELLO FROM HOMEPAGE'))
 
 app.listen(PORT, () => console.log(`Server running on port: http://localhost:${PORT}`));

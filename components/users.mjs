@@ -7,12 +7,13 @@ const users = [];
 
 // Adding users to our mock database
 
-router.post('/', (req, res) => {
-  const user = req.body;
+// router.post('/', (req, res) => {
+//     const user = req.body;
 
-  users.push({ ...user, id: uuidv4() });
+//     users.push({ ...user, id: uuidv4() });
 
-  res.send(`${user.first_name} has been added to the Database`);
-})  
+//     res.send(`${user.first_name} has been added to the Database`);
+// })  
+
 
 export default router;
